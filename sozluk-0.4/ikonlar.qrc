@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/prefix1" >
+        <file>help.png</file>
+        <file>locale.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>sozluk</Name>
+        <Homepage>http://code.google.com/u/dogangolcuk/</Homepage>
+        <Packager>
+            <Name>dogangolcuk</Name>
+            <Email>dogangolcuk@gmail.com</Email>
+        </Packager>
+        <License>GPL-2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>applications.education</PartOf>
+        <Summary>İngilizce-Türkçe , Türkçe-İngilizce Sözlük , İmla Kılavuzu</Summary>
+        <Description>Çok kullanılan MTU sözlük tarzı bir sözlük programı ve imla kılavuzu.</Description>
+	<Archive sha1sum="20bc5196db8b5b2b0d6bc2bf9b151e8cc318a921" type="targz">/home/qwert/MyProgs/2009/Sozluk/sozluk-0.4.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>qt-sql-sqlite</Dependency>
+        </BuildDependencies>
+    </Source>
+    <Package>
+        <Name>sozluk</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>qt-sql-sqlite</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/sozluk.desktop">sozluk.desktop</AdditionalFile>
+            <AdditionalFile  target="/usr/share/sozluk/sozlukdb">sozlukdb</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2011-02-20</Date>
+            <Version>0.4</Version>
+            <Comment>First Release.</Comment>
+            <Name>dogangolcuk</Name>
+            <Email>dogangolcuk@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
+
